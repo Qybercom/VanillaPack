@@ -1,5 +1,5 @@
 {
-	"name": "vanilla-pack",
+	"name": "@qybercom/vanilla-pack",
 	"version": "1.0.0",
 	"description": "Bundler for vanilla JS and CSS projects",
 	"main": "dist/index.js",
