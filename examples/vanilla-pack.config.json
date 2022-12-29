@@ -1,0 +1,56 @@
+{
+  "modules": {
+	"*": {
+	  "input": {
+		"path": "./src",
+		"exclude": ["./src/themes"],
+		"types": [
+		  {
+			"mime": "application/javascript",
+			"processors": ["@lintJS"]
+		  },
+		  {
+			"mime": "text/css",
+			"processors": ["@lintCSS"]
+		  }
+		]
+	  },
+	  "output": {
+		"path": "./dist",
+		"types": [
+		  {
+			"mime": "application/javascript",
+			"processors": ["@uglifyJS"],
+			"path": "helloworld.min.js"
+		  },
+		  {
+			"mime": "text/css",
+			"processors": ["@uglifyCSS"],
+			"path": "helloworld.min.css"
+		  }
+		]
+	  }
+	},
+	"theme1": {
+	  "input": {
+		"path": "./src/themes/theme1.css",
+		"types": [
+		  {
+			"mime": "text/css",
+			"processors": ["@lintCSS"]
+		  }
+		]
+	  },
+	  "output": {
+		"path": "./dist",
+		"types": [
+		  {
+			"mime": "text/css",
+			"processors": ["@uglifyCSS"],
+			"path": "helloworld-theme1.min.css"
+		  }
+		]
+	  }
+	}
+  }
+}

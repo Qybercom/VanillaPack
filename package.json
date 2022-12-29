@@ -1,0 +1,54 @@
+{
+	"name": "vanilla-pack",
+	"version": "1.0.0",
+	"description": "Bundler for vanilla JS and CSS projects",
+	"main": "dist/index.js",
+	"type": "module",
+	"bin": {
+		"@qybercom/vanilla-pack": "bin/index.js",
+		"vanilla-pack": "bin/index.js"
+	},
+	"scripts": {
+		"build": "rollup -c rollup.config.js",
+		"dev": "rollup -c rollup.config.js --watch",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Qybercom/VanillaPack.git"
+	},
+	"keywords": [
+		"vanilla",
+		"vanilla-js",
+		"vanilla-css",
+		"vanillaJS",
+		"vanillaCSS",
+		"Vanilla",
+		"VanillaJS",
+		"VanillaCSS",
+		"bundler",
+		"minifier"
+	],
+	"author": "Alexandru Furnica",
+	"license": "LGPL-3.0",
+	"bugs": {
+		"url": "https://github.com/Qybercom/VanillaPack/issues"
+	},
+	"homepage": "https://github.com/Qybercom/VanillaPack#readme",
+	"devDependencies": {
+		"@rollup/plugin-typescript": "^10.0.1",
+		"@types/mime-types": "^2.1.1",
+		"@types/node": "^18.11.18",
+		"@types/uglify-js": "^3.17.1",
+		"@types/uglifycss": "^0.0.7",
+		"rollup": "^3.9.0",
+		"tslib": "^2.4.1",
+		"typescript": "^4.9.4"
+	},
+	"dependencies": {
+		"arg": "^5.0.2",
+		"mime-types": "^2.1.35",
+		"uglify-js": "^3.17.4",
+		"uglifycss": "^0.0.29"
+	}
+}
